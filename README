@@ -1,0 +1,4 @@
+Web frontend for LED API
+
+This is a web frontend for controlling APA-102 LEDs connected to a Raspberry Pi.
+It interfaces with an API running on the same Pi or another on the same network.
