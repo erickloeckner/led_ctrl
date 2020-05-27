@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>LED controller</title>
+  </head>
+  <body>
+    <script type="module">
+      import init from './pkg/led_ctrl.js';
+      async function run() {
+        await init();
+      }
+      run();
+    </script>
+    <div id="main_div">
+      <div class="titlebox">
+        <p id="title">foo</p>
+      </div>
+    </div>
+    <div style="display: none;">
+
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+      viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice"
+      style="width:100%; height:100%; position:absolute; top:0; left:0; z-index:-1;">
+      <linearGradient id="svg_bg" gradientTransform="rotate(90)">
+        <stop id="bg_begin" offset="0%"   stop-color="hsla(0, 0%, 50%, 1.0)" />
+        <stop id="bg_end"   offset="100%" stop-color="hsla(0, 100%, 0%, 1.0)" />
+      </linearGradient>
+      <rect x="0" y="0" width="100" height="100" fill="url('#svg_bg')" />
+    </svg>
+  </body>
+</html>
