@@ -1,0 +1,45 @@
+[package]
+name = "led_ctrl"
+version = "0.1.0"
+authors = ["eric"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+futures-util = "^0.3.4"
+js-sys = "0.3.37"
+wasm-bindgen-futures = "0.4.10"
+
+[dependencies.gloo-events]
+version = "0.1.1"
+
+[dependencies.gloo-timers]
+version = "0.2.0"
+features = ["futures"]
+
+[dependencies.wasm-bindgen]
+version = "^0.2"
+
+[dependencies.web-sys]
+version = "0.3.4"
+features = [
+  "Document",
+  "Element",
+  "HtmlElement",
+  "Node",
+  "Window",
+  "CssStyleDeclaration",
+  "SvgElement",
+  "HtmlCollection",
+  "HtmlAnchorElement",
+  "HtmlImageElement",
+  "Headers",
+  "Request",
+  "RequestInit",
+  "RequestMode",
+  "Response",
+  "MouseEvent",
+  "HtmlTableElement",
+]
