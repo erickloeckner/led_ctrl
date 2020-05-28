@@ -6,27 +6,29 @@
 
 #main_div {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   
-  height: 100vh;
-  width: 100vw;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
   border: 2px solid;
 }
 
 .titlebox {
-  border: 8px solid rgba(255, 255, 255, 0.25);
+  border: 0px;
   padding: 2px;
   margin: 4px;
   text-align: center;
   font-family: "VT323", monospace;
   font-size: 1.9rem;
   color: rgba(255, 255, 255, 1.0);
+  background-color: rgba(0, 0, 0, 0.2);
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 1.0),
                2px 2px 0px rgba(0, 0, 0, 0.6),
                3px 3px 0px rgba(0, 0, 0, 0.3);
   
-  box-shadow: inset 0px 0px 3em 2em rgba(0, 0, 0, 0.5);
 }
 
 .imagebox {
@@ -105,6 +107,23 @@
 
 .t-row {
   width: 50%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 80%;
+  padding: 1%;
+  background: rgba(63, 63, 63, 0.5);
+  border: 4px solid rgba(0, 0, 0, 1.0);
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 @font-face {
