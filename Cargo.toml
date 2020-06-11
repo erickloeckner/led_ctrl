@@ -41,4 +41,6 @@ features = [
   "Response",
   "MouseEvent",
   "HtmlTableElement",
+  "SvgElement",
+  "HtmlSelectElement",
 ]
