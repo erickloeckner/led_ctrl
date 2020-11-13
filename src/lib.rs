@@ -124,7 +124,7 @@ fn hsv_2_rgb(col: &ColorHsv) -> Pixel {
 
 async fn set_leds() {
     {
-        let url = "http://home.erickloeckner.com/led_api_01/set";
+        let url = "http://website.tld/led_api_01/set";
         
         let mut req_opts = RequestInit::new();
         req_opts.method("POST");
